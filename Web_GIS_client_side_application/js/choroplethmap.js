@@ -56,7 +56,7 @@ function onEachFeature(feature, layer) {
 
   layer.bindPopup(
     `<strong>District:</strong> ${feature.properties.NIMI}<br>
-         <strong>Value:</strong> ${feature.properties.OBJECTID}`
+         <strong>Towers:</strong> ${feature.properties.TOWERS}`
   );
 }
 
@@ -66,7 +66,7 @@ async function addChoroplethLayer(url) {
     const data = await response.json();
 
     geojson = L.choropleth(data, {
-      valueProperty: "OBJECTID",
+      valueProperty: "TOWERS",
       scale: ["#ffffcc", "#800026"],
       steps: 5,
       mode: "q",
