@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web GIS</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+  </head>
+  <body>
+    <div class="banner">
+      <img src="./img/GIS.png" alt="GIS Banner" style="height: 20vh" />
+    </div>
+
+    <nav class="navbar">
+      <a href="index.html" class="active">Basic Map</a>
+      <a href="#">Choropleth Map</a>
+      <a href="#">Heatmap</a>
+    </nav>
+
+    <div class="title">
+      <h1 id="mainHeading">Web GIS Application</h1>
+    </div>
+
+    <div class="container">
+      <div id="map"></div>
+    </div>
+
+    <footer class="footer">
+      <p>© Sushant Aryal, Tartu University, 2025</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <script src="js/javascript.js"></script>
+    <script src="js/map.js"></script>
+  </body>
+</html>

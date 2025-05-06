@@ -1,0 +1,141 @@
+.container {
+  text-align: center;
+}
+
+.map-control {
+  background-color: #016ec9;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px auto;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.leaflet-popup-content {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.marker-cluster-small {
+  background-color: rgba(181, 226, 140, 0.6);
+}
+.marker-cluster-small div {
+  background-color: rgba(110, 204, 57, 0.6);
+}
+
+.marker-cluster-medium {
+  background-color: rgba(241, 211, 87, 0.6);
+}
+.marker-cluster-medium div {
+  background-color: rgba(240, 194, 12, 0.6);
+}
+
+.marker-cluster-large {
+  background-color: rgba(253, 156, 115, 0.6);
+}
+.marker-cluster-large div {
+  background-color: rgba(241, 128, 23, 0.6);
+}
+
+#map {
+  height: 600px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+.info {
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.info h4 {
+  margin: 0 0 5px;
+  color: #777;
+}
+
+.legend {
+  line-height: 18px;
+  color: #555;
+}
+
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+}
+
+.banner {
+  height: 20vh;
+  width: 99.3vw;
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navigation_content {
+  position: absolute;
+  z-index: 500;
+  top: 5vh;
+  left: 2vw;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+.navbar {
+  padding: 0.8rem 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar a {
+  color: #ecf0f1;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar a:hover {
+  background-color: #006fc8;
+  color: #fff;
+}
+
+.navbar a.active {
+  color: #fff;
+  background-color: #3498db; /* Bright blue */
+}
+
+.navbar a.active:hover {
+  background-color: #2980b9; /* Slightly darker blue */
+}
+
+.navbar a:not(.active):hover::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 2px;
+  bottom: 0;
+  left: 15%;
+  background-color: #3498db;
+}
